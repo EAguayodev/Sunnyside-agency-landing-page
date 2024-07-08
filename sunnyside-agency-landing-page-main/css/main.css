@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 3px solid red;
 }
 
 :root {
@@ -29,11 +30,13 @@
     --font-size: 18px;
 }
 
+/* header & hero section styling start */
+
 .nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 header {
@@ -54,8 +57,7 @@ header h1 {
     text-align: center;
     letter-spacing: 5px;
     position: relative;
-    top: 10rem;
-    left: 1rem;
+    top: 0;
 }
 
 header a {
@@ -69,37 +71,37 @@ header a {
     left: 2rem;
 }
 
+.hamburger-icon {
+    display: none;
+}
+
 .logo {
     position: relative;
     top: 1rem;
     right: 2rem;
 }
 
-.icon-arrow {
-    position: relative;
-    top: 16rem;
-    left: 39rem;
-}
-
-.menu-box {
+.hero-text {
     display: flex;
     flex-direction: column;
-    background: var(--White);
-    color: var(--Very-dark-desaturated-blue);
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    top: 15rem;
+    left: 7rem;
 }
 
-.menu-box a {
-    color: var(--Dark-grayish-blue);
-    font-weight: 600;
-    font-family: var(--font-barlow);
-    font-size: 15px;
+.icon-arrow {
+    position: relative;
+    top: 3rem;
+    left: 0;
 }
+
+
 
 .hidden {
-    display: none;
-    position: absolute;
-    width: 329px;
-    height: 329px;
+    /* display: none; */
 }
 
 
@@ -114,14 +116,17 @@ header a {
 }
 
 .btn-contact:hover {
-    background: hsl(211, 90%, 84%);
+    background: hsl(211, 89%, 76%);
 }
 
-/* .btn-hamburger {}
+.btn-hamburger {
+    display: none;
+}
 
-.hamburger-icon {} */
+/* header & hero section styling end */
 
-/* grid box styling */
+
+/* grid box styling start */
 .row-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -132,7 +137,7 @@ header a {
     height: 600px;
 }
 
-.box h2{
+.box h2 {
     font-family: var(--font-fraunces);
     font-size: 40px;
     width: 445px;
@@ -144,7 +149,7 @@ header a {
 
 .box-1 {}
 
-.box-1 p{
+.box-1 p {
     font-family: var(--font-barlow);
     color: var(--Dark-grayish-blue);
     font-size: 18px;
@@ -155,15 +160,17 @@ header a {
     left: 6rem;
 }
 
-.box-1 a{
+.box-1 a {
     color: var(--Very-dark-desaturated-blue);
     text-decoration-color: var(--Yellow);
+    text-decoration-thickness: 20%;
     font-size: 18px;
     font-weight: 600;
     position: relative;
-        top: 14rem;
-        left: 6rem;
+    top: 14rem;
+    left: 6rem;
 }
+
 .box-2 {
     background-image: url(../images/desktop/image-transform.jpg);
     background-repeat: no-repeat;
@@ -178,7 +185,7 @@ header a {
 
 .box-4 {}
 
-.box-4 p{
+.box-4 p {
     font-family: var(--font-barlow);
     color: var(--Dark-grayish-blue);
     font-size: 18px;
@@ -189,11 +196,12 @@ header a {
     left: 6rem;
 }
 
-.box-4 a{
+.box-4 a {
     color: var(--Very-dark-desaturated-blue);
     text-decoration-color: var(--Soft-red);
     font-size: 18px;
     font-weight: 600;
+    text-decoration-thickness: 20%;
     position: relative;
     top: 14rem;
     left: 6rem;
@@ -203,7 +211,7 @@ header a {
     background-image: url(../images/desktop/image-graphic-design.jpg);
 }
 
-.box-5 h3{
+.box-5 h3 {
     font-size: 28px;
     text-align: center;
     position: relative;
@@ -211,7 +219,7 @@ header a {
     left: 3rem;
 }
 
-.box-5 p{
+.box-5 p {
     width: 331px;
     text-align: center;
     font-family: var(--font-barlow);
@@ -220,13 +228,14 @@ header a {
     position: relative;
     top: 25rem;
     left: 12rem;
+    font-weight: 600;
 }
 
 .box-6 {
     background-image: url(../images/desktop/image-photography.jpg);
 }
 
-.box-6 h3{
+.box-6 h3 {
     text-align: center;
     font-size: 28px;
     position: relative;
@@ -234,35 +243,102 @@ header a {
     left: 3rem;
 }
 
-.box-6 p{
+.box-6 p {
     width: 331px;
     text-align: center;
     font-family: var(--font-barlow);
     font-size: 18px;
+    font-weight: 600;
     line-height: 28px;
     position: relative;
     top: 25rem;
     left: 12rem;
 }
 
-/* grid box styling */
+/* grid box styling end */
 
-.testimonials-container {}
+
+/* testimonial styles start */
+.testimonial-section {
+    height: 100%;
+}
+
+.testimonials-container {
+    width: 1110px;
+    height: 457px;
+    padding: 5rem 0rem;
+    position: relative;
+    left: 5rem;
+}
+
+.testimonials-container h3 {
+    text-align: center;
+    color: var(--Dark-grayish-blue);
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 
 .testimonials-row {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.avaatar-img {
+.testimonials-row>div {
+    padding: 0 1rem;
+}
+
+.testimonials-row h4 {
+    font-family: var(--font-fraunces);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    top: 5rem;
+}
+
+.testimonials-row small {
+    font-family: var(--font-barlow);
+    font-size: 14px;
+    text-align: center;
+    color: var(--Grayish-blue);
+    font-weight: 600;
+    position: relative;
+    top: 6rem;
+    left: 6.5rem;
+}
+
+.testimonials-row p {
+    color: var(--Very-dark-grayish-blue);
+    font-family: var(--font-barlow);
+    font-size: var(--font-size);
+    font-weight: 600;
+    width: 350px;
+    text-align: center;
+    line-height: 28px;
+    position: relative;
+    top: 3rem;
+}
+
+.avatar-img {
     border-radius: 50%;
     width: 72px;
     height: 72px;
+    position: relative;
+    left: 8rem;
+    top: 2rem;
 }
+
+/* testimonial styles end */
 
 .c-container {}
 
-.c-row {}
+.c-row {
+    display: flex;
+    justify-content: center;
+}
 
 .box_milk-bottles {}
 
@@ -278,6 +354,251 @@ header a {
 
 .icon__social {}
 
-footer{
+footer {
     background: var(--Dark-moderate-cyan-footer);
+    width: 100%;
+    height: 350px;
+    max-width: 1440px;
+}
+
+footer .logo__footer {
+    position: relative;
+    top: -2rem;
+}
+
+footer a {
+    font-family: var(--font-barlow);
+    text-decoration: none;
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+    padding: 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    top: 7rem;
+}
+
+footer a:hover {
+    color: var(--White);
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.icon__social {
+    cursor: pointer;
+    padding: 0 0.5rem;
+    position: relative;
+    top: 12rem;
+}
+
+.icon__social:hover {
+    color: var(--White);
+}
+
+@media(max-width: 768px) {
+    .logo {
+        right: 8rem;
+    }
+
+    header {
+        width: 329px;
+        height: 538px;
+    }
+
+    header h1 {
+        font-size: 40px;
+        width: 327px;
+        position: relative;
+        right: 100px;
+        top: -8rem;
+    }
+
+    .icon-arrow {
+        position: relative;
+        top: 0rem;
+        left: -6rem;
+    }
+
+    .nav {
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* padding: 3.2rem 2.5rem; */
+    }
+
+    .row-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menu-layout {
+        display: none;
+    }
+
+    .box-2 {
+        background-image: url(../images/mobile/image-transform.jpg);
+    }
+
+    .box-3 {
+        background-image: url(../images/mobile/image-stand-out.jpg);
+    }
+
+    .box-5 {
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+    }
+
+    .hamburger-icon {
+        display: block;
+        position: relative;
+        top: 2rem;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        /* left: 0; */
+    }
+
+    .menu-mobile {
+        border: 2px solid purple;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background: var(--White);
+
+        position: absolute;
+        top: 8rem;
+        left: 6%;
+        width: 329px;
+        height: 329px;
+    }
+
+    .menu-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.9rem;
+        padding: 3.6rem 0;
+    }
+
+
+    .menu-box a {
+        color: var(--Dark-grayish-blue);
+        font-weight: 600;
+        font-family: var(--font-barlow);
+        font-size: 15px;
+        z-index: 5;
+        padding: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-contact {
+        color: var(--Very-dark-desaturated-blue);
+        cursor: pointer;
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-family: "Barlow", sans-serif;
+        font-weight: 600;
+        background: var(--Yellow);
+    }
+
+    .menu-box a:hover {
+        color: var(--Very-dark-grayish-blue);
+    }
+
+    .menu-layout .triangle {
+        width: 0;
+        height: 0;
+        border-bottom: 2.5rem solid var(--White);
+        border-left: 2.5 solid transparent;
+    }
+
+    .box {
+        width: 327px;
+
+    }
+
+    .box-1 h2 {
+        font-size: 32px;
+        font-size: 32px;
+        position: relative;
+        top: 20px;
+        left: 0;
+        text-align: center;
+        width: 327px;
+    }
+
+    .box-1 p{
+        width: 327px;
+        position: relative;
+            top: 3rem;
+            left: 0rem;
+            text-align: center;
+    }
+
+    .box-1 a{
+        position: relative;
+            top: 3rem;
+            left: 7rem;
+    }
+
+    .box-1 {
+        width: 327px;
+        height: 309px;
+    }
+
+    .box-2 {
+        background-image: url(../images/mobile/image-transform.jpg);
+    }
+
+    .box-4 h2{
+        width: 327px;
+        left: 0;
+        text-align: center;
+    }
+
+.box-4 p{
+    width: 327px;
+    text-align: center;
+}
+
+    .testimonial-section{
+        width: 327px;
+        height: 1108px;
+    }
+
+    .testimonials-container{
+        left: 0;
+        width: 327px;
+    }
+
+    .testimonials-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 327px;
+            height: 1108px;
+    }
+
+    .testimonials-row p{
+        width: 327px;
+        left: 0;
+    }
+
+    .c-row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

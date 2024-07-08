@@ -8,44 +8,38 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <!-- nav links and logo -->
+  <!-- header start -->
   <header>
+    <!-- nav links and logo start -->
     <nav class="nav">
-        <div>
-          <a href="index.html">
-            <img class="logo" src="images/logo.svg" alt="sunnyside logo">
-          </a>
+        <a href="index.html">
+          <img class="logo" src="images/logo.svg" alt="sunnyside logo">
+        </a>
+        <div class="menu-layout menu-mobile">
+          <div class="triangle"></div>
+          <div class="menu-box">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a class="btn-contact" href="#">Contact</a>
+          </div>
         </div>
-        <div>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a class="btn-contact" href="#">Contact</a>
-          <button id="hamburger-menu" style="display: none;" class="btn-hamburger">
-            <img class="hamburger-icon" src="images/icon-hamburger.svg" alt="icon hamburger">
-          </button>
-        </div>
-        <div class="menu-box hidden" id="box-display">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a class="btn-contact" href="#">Contact</a>
-        </div>
-      </nav>
-   <div>
+      <img class="hamburger-icon" src="images/icon-hamburger.svg" alt="icon hamburger">
+    </nav>
+    <!-- nav links and logo end -->
+    <div class="hero-text">
 
-     <h1>We are creatives</h1>
-     <img class="icon-arrow" src="images/icon-arrow-down.svg" alt="icon arrow">
-   </div>
-    
+      <h1>We are creatives</h1>
+      <img class="icon-arrow" src="images/icon-arrow-down.svg" alt="icon arrow">
+    </div>
+
   </header>
-  <!-- nav links and logo -->
-
-  <!-- grid columns -->
+<!-- header end -->
+  <!-- grid columns start -->
   <div class="row-grid">
     <!-- grid heading 1 -->
     <div class="box box-1">
-      <h2>Transform your <br> brand</h2>
+      <h2>Transform your brand</h2>
       <p>We are a full-service creative agency specializing in helping brands grow fast.
         Engage your clients through compelling visuals that do most of the marketing for you.</p>
       <a href="#">Learn more</a>
@@ -53,10 +47,20 @@
     <!--/ grid heading 1 -->
     <!-- img 1 -->
     <div class="box box-2">
+      <picture>
+        <source media="(min-width: )" srcset="">
+        <source media="(min-width: )" srcset="">
+        <img src="" alt="">
+      </picture>
     </div>
     <!--/ img 1 -->
     <!-- img2 -->
     <div class="box box-3">
+      <picture>
+        <source media="(min-width: )" srcset="">
+        <source media="(min-width: )" srcset="">
+        <img src="" alt="">
+      </picture>
     </div>
     <!--/ img2 -->
     <!-- grid-heading-2 -->
@@ -79,70 +83,72 @@
     <!--/ grid + heading text 3 -->
     <!-- grid + heading text 4 -->
     <div class="box box-6">
-        <h3>Photography</h3>
-        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
-          image.
-        </p>
+      <h3>Photography</h3>
+      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
+        image.
+      </p>
     </div>
     <!--/ grid + heading text 4 -->
   </div>
-  <!--/ grid columns -->
-  <!-- testimonials section -->
-  <div class="testimonials-container">
-    <h3>Client testimonials</h3>
-    <div class="testimonials-row">
-      <div>
-        <img class="avaatar-img" src="images/image-emily.jpg" alt="Emily R">
-        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were
-          always
-          hit.</p>
-        <h4>Emily R.</h4>
-        <small>Marketing Director</small>
-      </div>
-      <div>
-        <img class="avaatar-img" src="images/image-thomas.jpg" alt="Thomas S">
-        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying
-          and
-          enjoyable
-          experience.</p>
-        <h4>Thomas S.</h4>
-        <small>Chief Operating Officer</small>
-      </div>
-      <div>
-        <img class="avaatar-img" src="images/image-jennie.jpg" alt="Jennie F">
-        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
-          recommended!</p>
-        <h4>Jennie F.</h4>
-        <small>Business Owner</small>
-      </div>
-    </div>
-  </div>
-  <!--/ testimonials section -->
-  <!-- cone img section -->
+  <!--/ grid columns end -->
+  <!-- testimonials section start -->
+   <section class="testimonial-section">
+      <div class="testimonials-container">
+       <h3>Client testimonials</h3>
+       <div class="testimonials-row">
+         <div class="testimonial testimonial-card-1">
+           <img class="avatar-img" src="images/image-emily.jpg" alt="Emily R">
+           <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+             hit.</p>
+           <h4>Emily R.</h4>
+           <small>Marketing Director</small>
+         </div>
+         <div class="testimonial testimonial-card-2">
+           <img class="avatar-img" src="images/image-thomas.jpg" alt="Thomas S">
+           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying
+             and
+             enjoyable
+             experience.</p>
+           <h4>Thomas S.</h4>
+           <small>Chief Operating Officer</small>
+         </div>
+         <div class="testimonial testimonial-card-3">
+           <img class="avatar-img" src="images/image-jennie.jpg" alt="Jennie F">
+           <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+             recommended!</p>
+           <h4>Jennie F.</h4>
+           <small>Business Owner</small>
+         </div>
+       </div>
+     </div>
+     <!--/ testimonials section end -->
+   </section>
+  <!-- cone img section start -->
   <div class="c-container">
     <div class="c-row">
       <div class="box_milk-bottles">
-
+        <img class="gallery-img-desktop" height="447" width="360" src="images/desktop/image-gallery-milkbottles.jpg" alt="gallery milkbottles">
+        <img class="gallery-img-mobile" style="display: none;" src="images/mobile/image-gallery-milkbottles.jpg" alt="">
       </div>
       <div class="box_orange">
-
+        <img class="gallery-img-desktop" height="447" width="360" src="images/desktop/image-gallery-orange.jpg" alt="gallery orange">
       </div>
       <div class="box_cone">
-
+        <img class="gallery-img-desktop" height="447" width="360" src="images/desktop/image-gallery-cone.jpg" alt="gallery cone">
       </div>
       <div class="box__cube">
-
+        <img class="gallery-img-desktop" height="447" width="360" src="images/desktop/image-gallery-sugarcubes.jpg" alt="gallery sugarcubes">
       </div>
     </div>
   </div>
-  <!--/cone img section  -->
+  <!--/ cone img section end -->
 
-  <!-- footer section -->
+  <!-- footer section start -->
   <footer>
     <div class="footer-row">
       <div>
         <a href="index.html">
-          <img class="logo__footer" src="images/logo.svg" alt="logo footer">
+          <img class="logo__footer" src="images/logo copy.svg" alt="logo footer">
         </a>
       </div>
       <div>
@@ -158,7 +164,7 @@
       </div>
     </div>
   </footer>
-  <!--/footer section  -->
+  <!--/ footer section end -->
   <script src="js/main.js"></script>
 </body>
 </html>
