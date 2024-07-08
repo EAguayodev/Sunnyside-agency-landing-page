@@ -100,11 +100,6 @@ header a {
 
 
 
-.hidden {
-    /* display: none; */
-}
-
-
 .btn-contact {
     background: var(--White);
     color: var(--Very-dark-desaturated-blue);
@@ -146,8 +141,10 @@ header a {
     left: 6rem;
 }
 
+.transform-mobile {
+    display: none;
+}
 
-.box-1 {}
 
 .box-1 p {
     font-family: var(--font-barlow);
@@ -209,6 +206,7 @@ header a {
 
 .box-5 {
     background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-size: contain;
 }
 
 .box-5 h3 {
@@ -233,6 +231,7 @@ header a {
 
 .box-6 {
     background-image: url(../images/desktop/image-photography.jpg);
+    background-size: contain;
 }
 
 .box-6 h3 {
@@ -425,7 +424,6 @@ footer a:hover {
     }
 
     .nav {
-        border: 2px solid red;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -442,20 +440,35 @@ footer a:hover {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .menu-layout {
+    .transform-desktop {
         display: none;
+    }
+
+    .transform-mobile {
+        display: inline-block;
     }
 
     .box-2 {
         background-image: url(../images/mobile/image-transform.jpg);
+        background-size: contain;
     }
 
     .box-3 {
         background-image: url(../images/mobile/image-stand-out.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .box-5 {
         background-image: url(../images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .box-6 {
+        background-image: url(../images/mobile/image-photography.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .hamburger-icon {
@@ -467,8 +480,11 @@ footer a:hover {
         /* left: 0; */
     }
 
+    .menu-layout {
+        display: none;
+    }
+
     .menu-mobile {
-        border: 2px solid purple;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -481,6 +497,8 @@ footer a:hover {
         width: 329px;
         height: 329px;
     }
+
+
 
     .menu-box {
         width: 100%;
@@ -527,7 +545,7 @@ footer a:hover {
 
     .box {
         width: 327px;
-
+        height: 312px;
     }
 
     .box-1 h2 {
@@ -540,18 +558,18 @@ footer a:hover {
         width: 327px;
     }
 
-    .box-1 p{
+    .box-1 p {
         width: 327px;
         position: relative;
-            top: 3rem;
-            left: 0rem;
-            text-align: center;
+        top: 3rem;
+        left: 0rem;
+        text-align: center;
     }
 
-    .box-1 a{
+    .box-1 a {
         position: relative;
-            top: 3rem;
-            left: 7rem;
+        top: 3rem;
+        left: 7rem;
     }
 
     .box-1 {
@@ -559,27 +577,51 @@ footer a:hover {
         height: 309px;
     }
 
-    .box-2 {
-        background-image: url(../images/mobile/image-transform.jpg);
+    .box-4 h2 {
+        width: 327px;
+        left: 0;
+        top: 0;
+        text-align: center;
     }
 
-    .box-4 h2{
+    .box-4 p {
         width: 327px;
+        top: 0;
         left: 0;
         text-align: center;
     }
 
-.box-4 p{
-    width: 327px;
-    text-align: center;
-}
+    .box-5 h3 {
+        position: relative;
+        top: 4rem;
+        left: 0rem;
+    }
 
-    .testimonial-section{
+    .box-5 P{
+        position: relative;
+            top: 6rem;
+            left: 0rem;
+    }
+
+    .box-6 h3 {
+        position: relative;
+        top: 6rem;
+        left: 0rem;
+    }
+
+    .box-6 p {
+        position: relative;
+        width: 327px;
+        top: 7rem;
+        left: 0rem;
+    }
+
+    .testimonial-section {
         width: 327px;
         height: 1108px;
     }
 
-    .testimonials-container{
+    .testimonials-container {
         left: 0;
         width: 327px;
     }
@@ -589,15 +631,15 @@ footer a:hover {
         flex-direction: column;
         justify-content: space-between;
         width: 327px;
-            height: 1108px;
+        height: 1108px;
     }
 
-    .testimonials-row p{
+    .testimonials-row p {
         width: 327px;
         left: 0;
     }
 
-    .c-row{
+    .c-row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }

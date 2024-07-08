@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger-icon');
-const menu = document.querySelector('menu-layout');
+const menuMobile = document.querySelector('.menu-layout');
 
 hamburger.addEventListener('click', function () {
-    hamburger.classList.toggle('mobile-menu');
-})
+    hamburger.classList.toggle('hide');
+    menuMobile.classList.toggle('menu-mobile');
+});
