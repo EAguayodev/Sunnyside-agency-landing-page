@@ -232,6 +232,7 @@ header a {
 .box-6 {
     background-image: url(../images/desktop/image-photography.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .box-6 h3 {
@@ -339,12 +340,12 @@ header a {
     justify-content: center;
 }
 
-.gallery-img-desktop{
+.gallery-img-desktop {
     width: 306px;
     height: 447px;
 }
 
-.gallery-img-mobile{
+.gallery-img-mobile {
     display: none;
 }
 
@@ -412,7 +413,7 @@ footer a:hover {
         top: -8rem;
     }
 
-    .hero-text{
+    .hero-text {
         top: 15rem;
         left: 0rem;
     }
@@ -451,6 +452,7 @@ footer a:hover {
     .box-2 {
         background-image: url(../images/mobile/image-transform.jpg);
         background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .box-3 {
@@ -569,7 +571,12 @@ footer a:hover {
         left: 7rem;
     }
 
-    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4,
+    .box-5,
+    .box-6 {
         width: 375px;
         height: 309px;
     }
@@ -594,10 +601,10 @@ footer a:hover {
         left: 0rem;
     }
 
-    .box-5 P{
+    .box-5 P {
         position: relative;
-            top: 6rem;
-            left: 0rem;
+        top: 6rem;
+        left: 0rem;
     }
 
     .box-6 h3 {
@@ -623,14 +630,14 @@ footer a:hover {
         width: 327px;
     }
 
-    .testimonials-container h3{
+    .testimonials-container h3 {
         font-size: 16px;
         position: absolute;
         top: 1rem;
         left: 2rem;
     }
 
-    .testimonial{
+    .testimonial {
         width: 327px;
         height: 288px;
     }
@@ -638,11 +645,11 @@ footer a:hover {
     .testimonials-row {
         display: flex;
         flex-direction: column;
-        width: 327px;
+        width: 375px;
         height: 1108px;
     }
 
-    .testimonials-row h4{
+    .testimonials-row h4 {
         top: -1rem;
     }
 
@@ -652,7 +659,12 @@ footer a:hover {
         top: -2rem;
     }
 
-    .avatar-img{
+    .testimonials-row small {
+        top: 0rem;
+        left: 5rem;
+    }
+
+    .avatar-img {
         position: relative;
         left: 7rem;
         top: -2rem;
@@ -663,11 +675,11 @@ footer a:hover {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .gallery-img-desktop{
+    .gallery-img-desktop {
         display: none;
     }
 
-    .gallery-img-mobile{
+    .gallery-img-mobile {
         display: block;
         width: 375px;
     }
