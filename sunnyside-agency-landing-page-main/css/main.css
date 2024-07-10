@@ -339,19 +339,14 @@ header a {
     justify-content: center;
 }
 
-.box_milk-bottles {}
+.gallery-img-desktop{
+    width: 306px;
+    height: 447px;
+}
 
-.box_orange {}
-
-.box_cone {}
-
-.box__cube {}
-
-.footer-row {}
-
-.logo__footer {}
-
-.icon__social {}
+.gallery-img-mobile{
+    display: none;
+}
 
 footer {
     background: var(--Dark-moderate-cyan-footer);
@@ -413,14 +408,19 @@ footer a:hover {
         font-size: 40px;
         width: 327px;
         position: relative;
-        right: 100px;
+        right: 0;
         top: -8rem;
+    }
+
+    .hero-text{
+        top: 15rem;
+        left: 0rem;
     }
 
     .icon-arrow {
         position: relative;
-        top: 0rem;
-        left: -6rem;
+        top: -6rem;
+        left: 0rem;
     }
 
     .nav {
@@ -517,9 +517,6 @@ footer a:hover {
         font-size: 15px;
         z-index: 5;
         padding: 0.5rem 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .btn-contact {
@@ -626,21 +623,52 @@ footer a:hover {
         width: 327px;
     }
 
+    .testimonials-container h3{
+        font-size: 16px;
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+    }
+
+    .testimonial{
+        width: 327px;
+        height: 288px;
+    }
+
     .testimonials-row {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         width: 327px;
         height: 1108px;
     }
 
+    .testimonials-row h4{
+        top: -1rem;
+    }
+
     .testimonials-row p {
         width: 327px;
-        left: 0;
+        left: -1.5rem;
+        top: -2rem;
+    }
+
+    .avatar-img{
+        position: relative;
+        left: 7rem;
+        top: -2rem;
     }
 
     .c-row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery-img-desktop{
+        display: none;
+    }
+
+    .gallery-img-mobile{
+        display: block;
+        width: 375px;
     }
 }
