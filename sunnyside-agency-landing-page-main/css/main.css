@@ -135,7 +135,7 @@ header a {
 .box h2 {
     font-family: var(--font-fraunces);
     font-size: 40px;
-    width: 445px;
+    width: 440px;
     position: relative;
     top: 10rem;
     left: 6rem;
@@ -180,7 +180,6 @@ header a {
     background-size: cover;
 }
 
-.box-4 {}
 
 .box-4 p {
     font-family: var(--font-barlow);
@@ -333,7 +332,6 @@ header a {
 
 /* testimonial styles end */
 
-.c-container {}
 
 .c-row {
     display: flex;
@@ -415,7 +413,7 @@ footer a:hover {
 
     .hero-text {
         top: 15rem;
-        left: 0rem;
+        left: 2rem;
     }
 
     .icon-arrow {
@@ -477,6 +475,7 @@ footer a:hover {
         display: block;
         position: relative;
         top: 2rem;
+        left: 40px;
         cursor: pointer;
         transition: all 0.4s ease;
         /* left: 0; */
@@ -583,7 +582,7 @@ footer a:hover {
 
     .box-4 h2 {
         width: 327px;
-        left: 0;
+        left: 23px;
         top: 0;
         text-align: center;
     }
@@ -591,7 +590,7 @@ footer a:hover {
     .box-4 p {
         width: 327px;
         top: 0;
-        left: 0;
+        left: 25px;
         text-align: center;
     }
 
