@@ -5,7 +5,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 3px solid red;
 }
 
 :root {
@@ -560,14 +559,14 @@ footer a:hover {
         width: 327px;
         position: relative;
         top: 3rem;
-        left: 0rem;
+        left: 2rem;
         text-align: center;
     }
 
     .box-1 a {
         position: relative;
-        top: 3rem;
-        left: 7rem;
+        top: 3.5rem;
+        left: 9rem;
     }
 
     .box-1,
@@ -592,6 +591,11 @@ footer a:hover {
         top: 0;
         left: 25px;
         text-align: center;
+    }
+
+    .box-4 a{
+        top: 2rem;
+            left: 9rem;
     }
 
     .box-5 h3 {
