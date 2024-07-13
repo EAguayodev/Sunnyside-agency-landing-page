@@ -76,7 +76,7 @@ header a {
 
 .logo {
     position: relative;
-    top: 1rem;
+    top: 0.3rem;
     right: 2rem;
 }
 
@@ -107,10 +107,15 @@ header a {
     border-radius: 50px;
     font-family: "Barlow", sans-serif;
     font-weight: 600;
+    position: relative;
+    border: none;
+    top: 1rem;
+    margin: 0rem 0 0 2rem;
 }
 
 .btn-contact:hover {
-    background: hsl(211, 89%, 76%);
+    background: #6ecefe;
+    color: var(--White);
 }
 
 .btn-hamburger {
@@ -205,25 +210,28 @@ header a {
 .box-5 {
     background-image: url(../images/desktop/image-graphic-design.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .box-5 h3 {
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
     font-size: 28px;
     text-align: center;
     position: relative;
-    top: 24rem;
-    left: 3rem;
+    top: 20rem;
+    left: 0rem;
 }
 
 .box-5 p {
-    width: 331px;
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+    width: 395px;
     text-align: center;
     font-family: var(--font-barlow);
     font-size: 18px;
     line-height: 28px;
     position: relative;
-    top: 25rem;
-    left: 12rem;
+    top: 21rem;
+    left: 8rem;
     font-weight: 600;
 }
 
@@ -234,23 +242,25 @@ header a {
 }
 
 .box-6 h3 {
+    color: var(--Dark-blue-photography-text);
     text-align: center;
     font-size: 28px;
     position: relative;
-    top: 24rem;
-    left: 3rem;
+    top: 20rem;
+    left: 0rem;
 }
 
 .box-6 p {
-    width: 331px;
+    color: var(--Dark-blue-photography-text);
+    width: 395px;
     text-align: center;
     font-family: var(--font-barlow);
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
     position: relative;
-    top: 25rem;
-    left: 12rem;
+    top: 21rem;
+    left: 8rem;
 }
 
 /* grid box styling end */
@@ -331,20 +341,32 @@ header a {
 
 /* testimonial styles end */
 
+img, picture{
+    max-width: 100%;
+    display: block;
+}
 
-.c-row {
+
+.gallery-row {
     display: flex;
-    justify-content: center;
 }
 
-.gallery-img-desktop {
-    width: 306px;
-    height: 447px;
+.gallery-section-1{
+    display: auto;
 }
 
-.gallery-img-mobile {
-    display: none;
+.gallery-section-2{
+    display: auto;
 }
+
+.gallery-section-1{
+    display: flex;
+}
+
+.gallery-section-2 {
+    display: flex;
+}
+
 
 footer {
     background: var(--Dark-moderate-cyan-footer);
@@ -369,7 +391,8 @@ footer a {
     top: 7rem;
 }
 
-footer a:hover {
+footer,
+a:hover {
     color: var(--White);
 }
 
@@ -383,13 +406,14 @@ footer a:hover {
 
 .icon__social {
     cursor: pointer;
-    padding: 0 0.5rem;
+    padding: 0;
+    margin: 0 5px;
     position: relative;
     top: 12rem;
 }
 
 .icon__social:hover {
-    color: var(--White);
+    fill: var(--White);
 }
 
 @media(max-width: 768px) {
@@ -490,15 +514,12 @@ footer a:hover {
         align-items: flex-end;
         justify-content: flex-end;
         background: var(--White);
-
         position: absolute;
-        top: 8rem;
+        top: 7rem;
         left: 6%;
         width: 329px;
         height: 329px;
     }
-
-
 
     .menu-box {
         width: 100%;
@@ -509,7 +530,6 @@ footer a:hover {
         padding: 3.6rem 0;
     }
 
-
     .menu-box a {
         color: var(--Dark-grayish-blue);
         font-weight: 600;
@@ -517,6 +537,8 @@ footer a:hover {
         font-size: 15px;
         z-index: 5;
         padding: 0.5rem 0;
+        position: relative;
+        left: 1rem;
     }
 
     .btn-contact {
@@ -527,6 +549,8 @@ footer a:hover {
         font-family: "Barlow", sans-serif;
         font-weight: 600;
         background: var(--Yellow);
+        padding: 1.5rem 3rem;
+        border: none;
     }
 
     .menu-box a:hover {
@@ -579,6 +603,10 @@ footer a:hover {
         height: 309px;
     }
 
+    .box-2{
+        order: -1;
+    }
+
     .box-4 h2 {
         width: 327px;
         left: 23px;
@@ -593,9 +621,9 @@ footer a:hover {
         text-align: center;
     }
 
-    .box-4 a{
+    .box-4 a {
         top: 2rem;
-            left: 9rem;
+        left: 9rem;
     }
 
     .box-5 h3 {
@@ -671,19 +699,5 @@ footer a:hover {
         position: relative;
         left: 7rem;
         top: -2rem;
-    }
-
-    .c-row {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .gallery-img-desktop {
-        display: none;
-    }
-
-    .gallery-img-mobile {
-        display: block;
-        width: 375px;
     }
 }
