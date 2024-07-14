@@ -207,18 +207,12 @@ header a {
     left: 6rem;
 }
 
-.box-5 {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 .box-5 h3 {
     color: var(--Dark-desaturated-cyan-graphic-design-text);
     font-size: 28px;
     text-align: center;
     position: relative;
-    top: 20rem;
+    top: -13rem;
     left: 0rem;
 }
 
@@ -230,15 +224,9 @@ header a {
     font-size: 18px;
     line-height: 28px;
     position: relative;
-    top: 21rem;
+    top: -12rem;
     left: 8rem;
     font-weight: 600;
-}
-
-.box-6 {
-    background-image: url(../images/desktop/image-photography.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .box-6 h3 {
@@ -246,7 +234,7 @@ header a {
     text-align: center;
     font-size: 28px;
     position: relative;
-    top: 20rem;
+    top: -13rem;
     left: 0rem;
 }
 
@@ -259,8 +247,12 @@ header a {
     font-weight: 600;
     line-height: 28px;
     position: relative;
-    top: 21rem;
+    top: -12rem;
     left: 8rem;
+}
+
+.bx5-text {
+    text-align: center;
 }
 
 /* grid box styling end */
@@ -341,7 +333,8 @@ header a {
 
 /* testimonial styles end */
 
-img, picture{
+img,
+picture {
     max-width: 100%;
     display: block;
 }
@@ -351,15 +344,15 @@ img, picture{
     display: flex;
 }
 
-.gallery-section-1{
+.gallery-section-1 {
     display: auto;
 }
 
-.gallery-section-2{
+.gallery-section-2 {
     display: auto;
 }
 
-.gallery-section-1{
+.gallery-section-1 {
     display: flex;
 }
 
@@ -419,6 +412,7 @@ a:hover {
 @media(max-width: 768px) {
     .logo {
         right: 8rem;
+        top: 1rem;
     }
 
     header {
@@ -468,30 +462,6 @@ a:hover {
 
     .transform-mobile {
         display: inline-block;
-    }
-
-    .box-2 {
-        background-image: url(../images/mobile/image-transform.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .box-3 {
-        background-image: url(../images/mobile/image-stand-out.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .box-5 {
-        background-image: url(../images/mobile/image-graphic-design.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .box-6 {
-        background-image: url(../images/mobile/image-photography.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     .hamburger-icon {
@@ -557,7 +527,7 @@ a:hover {
         color: var(--Very-dark-grayish-blue);
     }
 
-    .menu-layout .triangle {
+    .triangle {
         width: 0;
         height: 0;
         border-bottom: 2.5rem solid var(--White);
@@ -603,7 +573,7 @@ a:hover {
         height: 309px;
     }
 
-    .box-2{
+    .box-2 {
         order: -1;
     }
 
@@ -628,27 +598,27 @@ a:hover {
 
     .box-5 h3 {
         position: relative;
-        top: 4rem;
+        top: -8.5rem;
         left: 0rem;
     }
 
     .box-5 P {
         position: relative;
-        top: 6rem;
-        left: 0rem;
+        top: -8.5rem;
+        left: -0.5rem;
     }
 
     .box-6 h3 {
         position: relative;
-        top: 6rem;
+        top: -9rem;
         left: 0rem;
     }
 
     .box-6 p {
         position: relative;
         width: 327px;
-        top: 7rem;
-        left: 0rem;
+        top: -9rem;
+        left: 2rem;
     }
 
     .testimonial-section {
@@ -664,8 +634,9 @@ a:hover {
     .testimonials-container h3 {
         font-size: 16px;
         position: absolute;
-        top: 1rem;
-        left: 2rem;
+        top: 3rem;
+        left: 4rem;
+        text-align: center;
     }
 
     .testimonial {
