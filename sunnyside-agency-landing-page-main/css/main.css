@@ -145,11 +145,6 @@ header a {
     left: 6rem;
 }
 
-.transform-mobile {
-    display: none;
-}
-
-
 .box-1 p {
     font-family: var(--font-barlow);
     color: var(--Dark-grayish-blue);

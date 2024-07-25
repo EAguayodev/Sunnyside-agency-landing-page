@@ -12,43 +12,38 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-
-### Screenshot
-
-
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
-
-## My process
+- Solution URL: [Github](https://github.com/EAguayodev/Sunnyside-agency-landing-page/tree/main/sunnyside-agency-landing-page-main)
+- Live Site URL: [Vercel](https://sunnyside-agency-landing-page-three-lemon.vercel.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - CSS Grid
+- Vanilla Javascript
 - Desktop-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+- I learned how to use the order property in flexbox to change the order of the boxes when stacking on mobile.
+- Learned to display mobile menu and close it by writing only 7 lines of Javascript with the addClass.toggle instead of using if else statement to complete the open and close task for the menu.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div>
+        <picture>
+          <source media="(max-width: 900px)" srcset="images/desktop/image-graphic-design.jpg">
+          <source media="(max-width: 600px)" srcset="images/mobile/image-graphic-design.jpg">
+          <img src="images/desktop/image-graphic-design.jpg" alt="Graphic design">
+        </picture>
+        <div class="bx5-text">
+        
+          <h3>Graphic design</h3>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential
+            clients’ attention.</p>
+        </div>
 ```
 
 ```css
@@ -58,35 +53,34 @@ To see how you can add code snippets, see below:
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+const hamburger = document.querySelector('.hamburger-icon');
+const menuMobile = document.querySelector('.menu-layout');
+
+hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('hide');
+    menuMobile.classList.toggle('menu-mobile');
+});
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
+Plan to start integrating the use of css frameworks going forward to complete the jr level challenges here on frontendmentor.
 
 
 ### Useful resources
 
-- [MRZ.Code.Manufacture- youtube](MRZ.Code.Manufacture) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Codepen - Ephraim Sangma](https://codepen.io/ephs23/pen/NeQZGx) -.
+- [MRZ.Code.Manufacture- youtube](MRZ.Code.Manufacture) - The youtube video helped me get some ideas for tackling writing the code for the mobile box display.
+- [https://flexbox.malven.co/](https://flexbox.malven.co/) - Used this resource to get an idea for ordering the box stacking on mobile according to the mobile design given. 
 
 
 ## Author
 
 - Website - [Eric Aguayo](https://www.ericaguayo.com)
-- Frontend Mentor - [@yourusername]()
-- Twitter - [@yourusername]()
+- Frontend Mentor - [@EAguayodev]()
 
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Want to give out my acknowledgements to @Walker-90207 for giving me inspiration to change my direction in tackling the sections with the gallery images by putting each image inside two separate div tags inside a section.
 
